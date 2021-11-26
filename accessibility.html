@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessbility</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-image">
+            <img src="./images/logo.jpg" alt="Student" />
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li><a href="./index.html">Welcome</a></li>
+              <li>
+                <a href="./reflection-essay.html">Reflection Essay</a>
+              </li>
+              <li>
+                <a class="active" href="./accessibility.html">Accessbility</a>
+              </li>
+              <li>
+                <a href="./topical-information.html">Topical Information</a>
+              </li>
+              <li><a href="./fun.html">Fun</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero-Image -->
+    <div class="container">
+      <section class="hero-image-accessibility"></section>
+    </div>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <div class="container">
+        <h2>Accessibility</h2>
+        <div class="heading-line"></div>
+        <div class="intro-text">
+          <p>
+            When we say accessibility in the context of web technology, most
+            people immediately think of making sure websites/apps are usable by
+            people with disabilities, for example:
+          </p>
+          <ul>
+            <li>
+              Visually impaired people using screen readers or
+              magnification/zoom to access text
+            </li>
+            <li>
+              People with motor function impairments using the keyboard (or
+              other non-mouse features) to activate website functionality.
+            </li>
+            <li>
+              People with hearing impairments relying on captions/subtitles or
+              other text alternatives for audio/video content.
+            </li>
+          </ul>
+          <p>
+            However, it is wrong to say that accessibility is just about
+            disabilities. Really, the aim of accessibility is to make your
+            websites/apps usable by as many people in as many contexts as
+            possible, not just those users using high-powered desktop computers.
+          </p>
+          <br>
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility">From Developer.Mozilla</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="accessbility-description">
+      <div class="container">
+        <div class="accessbility-content">
+          <h4>How the group tested the code for accessibility through automated tests?</h4>
+          <p>
+            We used several automated tests and tools to ensure that our pages fulfill the guidelines
+            for what an accessible page is. We used the web accessibility evaluation tool list on w3.org
+            to check, and from there picked different tools to evaluate our pages.
+            First, we used the A-Tester by Evaluera Ltd. It checks the pre-enhanced version of
+            the web pages against it’s standard, and thus determines if the website is accessible
+            for people with disabilities. We got a hundred percent health score. We used another
+            accessibility test; this time at https://www.accessi.org, and we were very satisfied
+            with the result. Lastly, we used the color contrast test at https://color.a11y.com
+            to check how accessible our site was in terms of the color contrasts.
+            Our choice of colors had some problems, but overall, they weren’t very problematic
+            as we will explain below, so we still went ahead with our choice of colors for the pages.
+          </p>
+          <div class="accessibility-images">
+            <div class="accessibility-image-1">
+              <img
+                src="./images/group-testing.jpeg"
+                alt="Group Accessibility Testing"
+              />
+            </div>
+            <div class="accessibility-image-1">
+              <img
+                src="./images/group-testing-2.jpeg"
+                alt="Group Accessibility Testing"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="accessbility-content">
+          <h4>
+            checking, validating, and coding-choices for universal design beyond
+            what an automated test can do?
+          </h4>
+          <p>
+            We brainstormed for some time and decided on some ways to test our code without the
+            automatic tests. We initially planned on doing this earlier on, but we later decided
+            to first create a rough sketch (mockup) of the site, then make a layout for the code.
+            After this was done, and the initial version of the website was up, we tested it
+            by turning off our mouse and interact with it using our keyboard only.
+            This was done because many users are unable to interact with the web with a mouse
+            and rely purely on the keyboard. However, when testing our website, we realized
+            that this worked poorly at the start because using the tab key, we couldn’t navigate
+            through the menu bar at the top of the site. To solve this problem, we decided to
+            code a second “menu-like bar” at the bottom at the website. We made it stylish,
+            so it did not look out of place, and we also added a hovering effect
+            if interacted with by a mouse.
+          </p>
+          In our second test, we decided to turn off the images and see if the website still made
+          sense for the users. Images are important, but the website should still be readable and
+          understandable for the users, if they for some reason (low bandwidth etc.) are unable
+          to see the images. We realized that we had used a lot of images as titles and headings.
+          When we turned off the images, nothing really made sense, because the headings were gone.
+          To combat this, we made the headings text based. We used the images as hero images to
+          describe the content of our pages in a visual way. The images enhanced the site,
+          but now the content was not essentially reliant upon the images.
+
+          <p>
+            Lastly, we tested the color contrast on our page, by having a few color-blind friends
+            test it out. Everyone reported that the color contrast was comfortable to their eyes,
+            and that everything was clear to read and understand. Therefore, we still went with
+            our colors of choice, even though the automated color test didn’t give us a full score.
+          </p>
+
+          <div class="accessibility-images">
+            <div class="accessibility-image-1">
+              <img
+                src="./images/group-testing.png"
+                alt="Group Accessibility Testing"
+              />
+            </div>
+            <div class="accessibility-image-1">
+              <img
+                src="./images/group-testing-2.png"
+                alt="Group Accessibility Testing"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2021 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
